@@ -7,7 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      name: 'React',
+      text : 'Helloworld!!!'
     };
   }
 
@@ -16,7 +17,7 @@ class App extends Component {
       <div>
         <Hello name={this.state.name} />
         <p>
-        Helloworld
+       {this.state.text}
         </p>
       </div>
     );
